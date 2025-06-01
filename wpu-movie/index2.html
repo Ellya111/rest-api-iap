@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WPU Movie</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">WPU Movie</a>
+      </div>
+    </nav>
+
+    <!-- SEARCH FORM -->
+    <div class="container">
+      <div class="row mt-3 justify-content-center">
+        <div class="col-md-8">
+          <h1 class="text-center">Search Movie</h1>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Movie Title" id="search-input">
+            <button class="btn btn-dark" type="button" id="search-button">Search</button>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- MOVIE LIST -->
+      <div class="row" id="movie-list"></div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Movie Title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Movie detail will be injected here -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
