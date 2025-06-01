@@ -1,55 +1,41 @@
-body {
-  padding-top: 80px;
+#portfolio .card {
+  min-height: 400px; /* sedikit kecilin supaya card gak terlalu tinggi */
+  display: flex;
+  flex-direction: column;
+  /* tambahkan agar card selalu punya lebar yang pas dan rapih */
+  width: 100%; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* biar card ada efek bayangan */
+  border-radius: 10px;
+  overflow: hidden; /* supaya border-radius juga efek ke gambar */
+  background-color: white;
 }
 
-.jumbotron {
-  background-color: #f8f9fa;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+#portfolio .card-img-top {
+  width: 100%;
+  height: auto;          /* tinggi otomatis supaya proporsional */
+  max-height: 200px;     /* batas maksimal tinggi */
+  object-fit: contain;   /* gambar full, tidak terpotong */
+  border-radius: 10px 10px 0 0; /* bulat di atas card */
+  background-color: #f0f0f0; /* warna latar gambar kalau transparan */
+  padding: 10px;         /* kasih ruang di sekeliling gambar */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;    /* agar gambar terpusat horizontal */
+  flex-shrink: 0;
 }
 
-.jumbotron img {
-  width: 200px;
+#portfolio .card-body {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;   /* supaya teks di tengah secara vertikal */
+  justify-content: center;
+  text-align: center;
 }
 
 .navbar {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #ff69b4 !important;
-}
-
-.navbar .nav-link,
-.navbar .navbar-brand {
-  color: white !important;
-}
-
-footer {
-  background-color: #ff69b4;
-  color: white;
-  padding: 1rem 0;
-}
-
-/* Custom warna pink */
-.bg-pink {
-  background-color: #ff69b4 !important;
-  color: white;
-}
-
-.btn-pink {
-  background-color: #ff69b4;
-  border-color: #ff69b4;
-  color: white;
-}
-
-.btn-pink:hover {
-  background-color: #e055a2;
-  border-color: #e055a2;
-}
-
-/* Atur ukuran gambar di portfolio */
-#portfolio .card-img-top {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* efek bayangan */
+  background-color: #ff69b4 !important; /* supaya warna tetap solid */
 }
